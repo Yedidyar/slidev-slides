@@ -40,9 +40,10 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-layout: image
-image: ./recursion-joke.jpg
+layout: center
 ---
+
+![recursion](./recursion-joke.jpg)
 
 ---
 transition: fade-out
@@ -85,9 +86,6 @@ h1 {
 Here is another comment.
 -->
 
----
-layout: image-right
-image: https://cover.sli.dev
 ---
 
 # Code
