@@ -53,13 +53,14 @@ transition: fade-out
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
+<li v-click>📝 <strong>Text-based</strong> - focus on the content with Markdown, and then style them later</li>
+<li v-click>🎨 <strong>Themable</strong> - themes can be shared and re-used as npm packages</li>
+<li v-click>🧑‍💻 <strong>Developer Friendly</strong> - code highlighting, live coding with autocompletion</li>
+<li v-click>🤹 <strong>Interactive</strong> - embed Vue components to enhance your expressions</li>
+<li v-click>🎥 <strong>Recording</strong> - built-in recording and camera view</li>
+<li v-click>📤 <strong>Portable</strong> - export to PDF, PPTX, PNGs, or even a hostable SPA</li>
+<li v-click>🛠 <strong>Hackable</strong> - virtually anything that's possible on a webpage is possible in Slidev</li>
+
   <br>
   <br>
 
