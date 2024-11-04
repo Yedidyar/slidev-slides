@@ -3,7 +3,6 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: Welcome to Slidev
 info: |
@@ -24,15 +23,7 @@ mdc: true
 overviewSnapshots: true
 ---
 
-# Welcome to Slidev
-
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
+# Why it’s time to npm uninstall PowerPoint
 
 <div class="abs-br m-6 flex gap-2">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
@@ -49,6 +40,12 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+layout: center
+---
+
+![recursion](./recursion-joke.jpg)
+
+---
 transition: fade-out
 ---
 
@@ -56,13 +53,14 @@ transition: fade-out
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
+<li v-click>📝 <strong>Text-based</strong> - focus on the content with Markdown, and then style them later</li>
+<li v-click>🎨 <strong>Themable</strong> - themes can be shared and re-used as npm packages</li>
+<li v-click>🧑‍💻 <strong>Developer Friendly</strong> - code highlighting, live coding with autocompletion</li>
+<li v-click>🤹 <strong>Interactive</strong> - embed Vue components to enhance your expressions</li>
+<li v-click>🎥 <strong>Recording</strong> - built-in recording and camera view</li>
+<li v-click>📤 <strong>Portable</strong> - export to PDF, PPTX, PNGs, or even a hostable SPA</li>
+<li v-click>🛠 <strong>Hackable</strong> - virtually anything that's possible on a webpage is possible in Slidev</li>
+
   <br>
   <br>
 
@@ -89,9 +87,6 @@ h1 {
 Here is another comment.
 -->
 
----
-layout: image-right
-image: https://cover.sli.dev
 ---
 
 # Code
@@ -492,6 +487,7 @@ const arr = ref(emptyArray(10));
 
 Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
 
+<!-- prettier-ignore -->
 ```ts {monaco-run}
 import { version } from "vue";
 import { emptyArray, sayHello } from "./external";
