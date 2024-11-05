@@ -105,7 +105,7 @@ const doubled = computed(() => count.value * 2);
 doubled.value = 2;
 ```
 
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
+<arrow v-click="[4, 5]" x1="360" y1="270" x2="205" y2="310" color="#953" width="2" arrowSize="1" />
 
 <!-- Footer -->
 
