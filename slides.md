@@ -57,7 +57,6 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
 <li v-click>🎨 <strong>Themable</strong> - themes can be shared and re-used as npm packages</li>
 <li v-click>🧑‍💻 <strong>Developer Friendly</strong> - code highlighting, live coding with autocompletion</li>
 <li v-click>🤹 <strong>Interactive</strong> - embed Vue components to enhance your expressions</li>
-<li v-click>🎥 <strong>Recording</strong> - built-in recording and camera view</li>
 <li v-click>📤 <strong>Portable</strong> - export to PDF, PPTX, PNGs, or even a hostable SPA</li>
 <li v-click>🛠 <strong>Hackable</strong> - virtually anything that's possible on a webpage is possible in Slidev</li>
 
