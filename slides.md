@@ -67,8 +67,6 @@ transition: fade-out
 
 # What is Slidev?
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
 <li v-click>📝 <strong>Text-based</strong> - focus on the content with Markdown, and then style them later</li>
 <li v-click>🎨 <strong>Themable</strong> - themes can be shared and re-used as npm packages</li>
 <li v-click>🧑‍💻 <strong>Developer Friendly</strong> - code highlighting, live coding with autocompletion</li>
@@ -79,7 +77,9 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
   <br>
   <br>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+<div v-click>
+  <a href="https://sli.dev" class="btn">Learn More</a>
+</div>
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
