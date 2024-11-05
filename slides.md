@@ -439,3 +439,43 @@ class: text-center
 [Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
 
 <PoweredBySlidev mt-10 />
+
+---
+layout: center
+class: text-center
+---
+
+# Thank You! 🙏
+
+---
+layout: center
+class: text-center
+---
+
+# My Socials 😄
+
+<div class="flex justify-center">
+  <img
+    class="rounded-full w-40 h-40 mb-8"
+    src="https://github.com/yedidyar.png"
+    alt="Speaker avatar"
+  />
+</div>
+
+Yedidya Rashi - Developer Experience Developer at Next Insurance
+
+<div class="flex justify-center gap-4 mt-4">
+  <div class="flex items-center gap-2">
+    <a href="https://github.com/yedidyar" target="_blank" class="!border-none !hover:text-blue-500"> <carbon-logo-github class="text-3xl"/>  </a>
+     @yedidyar
+  </div>
+  <div class="flex items-center gap-2">
+    <a href="https://x.com/yedidyaRashi" target="_blank" class="!border-none !hover:text-blue-500"> <carbon-logo-twitter class="text-3xl"/>  </a>
+    @yedidyaRashi
+  </div>
+  <div class="flex items-center gap-2">
+    <a href="https://www.linkedin.com/in/yedidya-rashi/" target="_blank" class="!border-none !hover:text-blue-500"> <carbon-logo-linkedin class="text-3xl"/>  </a>
+    @Yedidya Rashi
+  </div>
+
+</div>
