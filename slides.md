@@ -145,66 +145,44 @@ Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev sup
 Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
 
 ````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: "John Doe",
-  books: [
-    "Vue 2 - Advanced Guide",
-    "Vue 3 - Basic Guide",
-    "Vue 4 - The Mystery",
-  ],
-});
-```
+```ts {*|4-6|8-10|*}
+// Step 1: Set Up a Basic Server
+import http from "http";
 
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: "John Doe",
-        books: [
-          "Vue 2 - Advanced Guide",
-          "Vue 3 - Basic Guide",
-          "Vue 4 - The Mystery",
-        ],
-      },
-    };
-  },
-};
+const server = http.createServer((req, res) => {
+  res.end("Welcome to the Node.js Israel open stage meetup!\n");
+});
+
+server.listen(3000, () =>
+  console.log("Server running at http://localhost:3000"),
+);
 ```
 
 ```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: "John Doe",
-      books: [
-        "Vue 2 - Advanced Guide",
-        "Vue 3 - Basic Guide",
-        "Vue 4 - The Mystery",
-      ],
-    },
-  }),
-};
+// Step 2: Add Routing Logic
+const server = http.createServer((req, res) => {
+  if (req.url === "/")
+    res.end("Welcome to the Node.js Israel open stage meetup!");
+  else if (req.url === "/about")
+    res.end("Learn more about the Node.js Israel community");
+  else res.end("404 Page Not Found");
+});
 ```
 
-Non-code blocks are ignored.
+```ts
+// Step 3: Introduce Async File Read
+import fs from "fs/promises";
 
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: "John Doe",
-  books: [
-    "Vue 2 - Advanced Guide",
-    "Vue 3 - Basic Guide",
-    "Vue 4 - The Mystery",
-  ],
-};
-</script>
+const server = http.createServer(async (req, res) => {
+  if (req.url === "/speakers") {
+    try {
+      const data = await fs.readFile("speakers.txt", "utf8");
+      res.end(`meetup speakers:\n${data}`);
+    } catch {
+      res.end("speakers file not found");
+    }
+  } else res.end("404 Page Not Found");
+});
 ```
 ````
 
