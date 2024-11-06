@@ -430,15 +430,39 @@ console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-
 ```
 
 ---
-layout: center
-class: text-center
----
 
 # Learn More
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+<li>💅 <strong>Stylish</strong> - Utilizes UnoCSS for on-demand utility-first CSS, facilitating effortless styling of slides.</li>
+<li>🧩 <strong>Interactive</strong> - Allows embedding of Vue components directly into slides, enhancing interactivity and expressiveness.</li>
+<li>🗣️ <strong>Presenter Mode</strong> - Offers a presenter mode that can be accessed via a separate window or device, providing speaker notes and slide previews.</li>
+<li>✏️ <strong>Drawing and Annotations</strong> - Enables drawing and annotating directly on slides to emphasize key points during presentations.</li>
+<li>📐 <strong>LaTeX Support</strong> - Built-in support for LaTeX allows for the inclusion of complex mathematical equations.</li>
+<li>🖼️ <strong>Icons</strong> - Provides access to a vast collection of icons from various icon sets, which can be used directly in Markdown.</li>
+<li>🎥 <strong>Recording</strong> - Includes built-in recording and camera view functionalities, allowing you to record presentations with ease.</li>
+<li>📥 <strong>Code Snippet Importing</strong> - Import code snippets from existing files into your slides, facilitating the inclusion of external code examples.</li>
 
-<PoweredBySlidev mt-10 />
+<li>🎨 <strong>Prettier Plugin</strong> - Use the Prettier plugin to format your slides, ensuring consistent and clean code formatting.</li>
+
+<li>🔍 <strong>Zoom Slides</strong> - Zoom the content of a slide to a specific scale, highlighting important details during presentations.</li>
+
+<br>
+<br>
+
+<div class="text-center">
+  <a href="https://sli.dev">Documentation</a> · <a href="https://github.com/slidevjs/slidev">GitHub</a> · <a href="https://sli.dev/resources/showcases">Showcases</a>
+
+</div>
+
+<div class="text-center">
+    <PoweredBySlidev class="mt-10" />
+</div>
+
+<style>
+  li {
+    font-size: 0.85rem;
+  }
+</style>
 
 ---
 layout: center
